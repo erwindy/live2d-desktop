@@ -1,0 +1,343 @@
+body {
+    font-size: 10px;
+    height: 100%;
+    font-family: 'Microsoft YaHei';
+}
+
+.drawable{
+
+}
+
+.waifu {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    font-size: 0;
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+}
+.waifu:hover {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.waifu-tips {
+    opacity: 0;
+    margin: -20px 20px;
+    padding: 5px 10px;
+    border: 1px solid rgba(224, 186, 140, 0.62);
+    border-radius: 12px;
+    background-color: rgba(236, 217, 188, 0.5);
+    box-shadow: 0 3px 15px 2px rgba(191, 158, 118, 0.2);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    animation-delay: 5s;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-name: shake;
+    animation-timing-function: ease-in-out;
+}
+.waifu-tool {
+    display: none;
+    color: #aaa;
+    top: 50px;
+    right: -20px;
+    position: absolute;
+}
+.waifu:hover .waifu-tool {
+    display: block;
+}
+.waifu-tool span {
+    display: block;
+    cursor: pointer;
+    color: #5b6c7d;
+    transition: 0.2s;
+}
+.waifu-tool span:hover {
+    color: #34495e;
+}
+.waifu #live2d{
+    z-index: 99;
+    position: relative;
+    bottom: 20px;
+}
+
+@keyframes shake {
+    2% {
+        transform: translate(0.5px, -1.5px) rotate(-0.5deg);
+    }
+
+    4% {
+        transform: translate(0.5px, 1.5px) rotate(1.5deg);
+    }
+
+    6% {
+        transform: translate(1.5px, 1.5px) rotate(1.5deg);
+    }
+
+    8% {
+        transform: translate(2.5px, 1.5px) rotate(0.5deg);
+    }
+
+    10% {
+        transform: translate(0.5px, 2.5px) rotate(0.5deg);
+    }
+
+    12% {
+        transform: translate(1.5px, 1.5px) rotate(0.5deg);
+    }
+
+    14% {
+        transform: translate(0.5px, 0.5px) rotate(0.5deg);
+    }
+
+    16% {
+        transform: translate(-1.5px, -0.5px) rotate(1.5deg);
+    }
+
+    18% {
+        transform: translate(0.5px, 0.5px) rotate(1.5deg);
+    }
+
+    20% {
+        transform: translate(2.5px, 2.5px) rotate(1.5deg);
+    }
+
+    22% {
+        transform: translate(0.5px, -1.5px) rotate(1.5deg);
+    }
+
+    24% {
+        transform: translate(-1.5px, 1.5px) rotate(-0.5deg);
+    }
+
+    26% {
+        transform: translate(1.5px, 0.5px) rotate(1.5deg);
+    }
+
+    28% {
+        transform: translate(-0.5px, -0.5px) rotate(-0.5deg);
+    }
+
+    30% {
+        transform: translate(1.5px, -0.5px) rotate(-0.5deg);
+    }
+
+    32% {
+        transform: translate(2.5px, -1.5px) rotate(1.5deg);
+    }
+
+    34% {
+        transform: translate(2.5px, 2.5px) rotate(-0.5deg);
+    }
+
+    36% {
+        transform: translate(0.5px, -1.5px) rotate(0.5deg);
+    }
+
+    38% {
+        transform: translate(2.5px, -0.5px) rotate(-0.5deg);
+    }
+
+    40% {
+        transform: translate(-0.5px, 2.5px) rotate(0.5deg);
+    }
+
+    42% {
+        transform: translate(-1.5px, 2.5px) rotate(0.5deg);
+    }
+
+    44% {
+        transform: translate(-1.5px, 1.5px) rotate(0.5deg);
+    }
+
+    46% {
+        transform: translate(1.5px, -0.5px) rotate(-0.5deg);
+    }
+
+    48% {
+        transform: translate(2.5px, -0.5px) rotate(0.5deg);
+    }
+
+    50% {
+        transform: translate(-1.5px, 1.5px) rotate(0.5deg);
+    }
+
+    52% {
+        transform: translate(-0.5px, 1.5px) rotate(0.5deg);
+    }
+
+    54% {
+        transform: translate(-1.5px, 1.5px) rotate(0.5deg);
+    }
+
+    56% {
+        transform: translate(0.5px, 2.5px) rotate(1.5deg);
+    }
+
+    58% {
+        transform: translate(2.5px, 2.5px) rotate(0.5deg);
+    }
+
+    60% {
+        transform: translate(2.5px, -1.5px) rotate(1.5deg);
+    }
+
+    62% {
+        transform: translate(-1.5px, 0.5px) rotate(1.5deg);
+    }
+
+    64% {
+        transform: translate(-1.5px, 1.5px) rotate(1.5deg);
+    }
+
+    66% {
+        transform: translate(0.5px, 2.5px) rotate(1.5deg);
+    }
+
+    68% {
+        transform: translate(2.5px, -1.5px) rotate(1.5deg);
+    }
+
+    70% {
+        transform: translate(2.5px, 2.5px) rotate(0.5deg);
+    }
+
+    72% {
+        transform: translate(-0.5px, -1.5px) rotate(1.5deg);
+    }
+
+    74% {
+        transform: translate(-1.5px, 2.5px) rotate(1.5deg);
+    }
+
+    76% {
+        transform: translate(-1.5px, 2.5px) rotate(1.5deg);
+    }
+
+    78% {
+        transform: translate(-1.5px, 2.5px) rotate(0.5deg);
+    }
+
+    80% {
+        transform: translate(-1.5px, 0.5px) rotate(-0.5deg);
+    }
+
+    82% {
+        transform: translate(-1.5px, 0.5px) rotate(-0.5deg);
+    }
+
+    84% {
+        transform: translate(-0.5px, 0.5px) rotate(1.5deg);
+    }
+
+    86% {
+        transform: translate(2.5px, 1.5px) rotate(0.5deg);
+    }
+
+    88% {
+        transform: translate(-1.5px, 0.5px) rotate(1.5deg);
+    }
+
+    90% {
+        transform: translate(-1.5px, -0.5px) rotate(-0.5deg);
+    }
+
+    92% {
+        transform: translate(-1.5px, -1.5px) rotate(1.5deg);
+    }
+
+    94% {
+        transform: translate(0.5px, 0.5px) rotate(-0.5deg);
+    }
+
+    96% {
+        transform: translate(2.5px, -0.5px) rotate(-0.5deg);
+    }
+
+    98% {
+        transform: translate(-1.5px, -1.5px) rotate(-0.5deg);
+    }
+
+    0%, 100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+@font-face {
+  font-family: 'Flat-UI-Icons';
+  src: url('flat-ui-icons-regular.eot');
+  src: url('flat-ui-icons-regular.eot?#iefix') format('embedded-opentype'), url('flat-ui-icons-regular.woff') format('woff'), url('flat-ui-icons-regular.ttf') format('truetype'), url('flat-ui-icons-regular.svg#flat-ui-icons-regular') format('svg');
+}
+[class^="fui-"],
+[class*="fui-"] {
+  font-family: 'Flat-UI-Icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fui-cross:before {
+  content: "\e609";
+}
+.fui-info-circle:before {
+  content: "\e60f";
+}
+.fui-photo:before {
+  content: "\e62a";
+}
+.fui-eye:before {
+  content: "\e62c";
+}
+.fui-chat:before {
+  content: "\e62d";
+}
+.fui-home:before {
+  content: "\e62e";
+}
+.fui-user:before {
+  content: "\e631";
+}
+
+@font-face {font-family: "iconfont1";
+    src: url('iconfont.eot?t=1565812004222'); /* IE9 */
+    src: url('iconfont.eot?t=1565812004222#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOoAAsAAAAAB8gAAANbAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDLIJ+ATYCJAMMCwgABCAFhG0HOxvJBsguIScbXkQiNLvZIZWi3ozpfh04RUQQQbhGzia5ewSHJF9i2SJIBAmkgISs8NXtC10gD2TEzeefNVmIkxWicumK+Jj5+dHkTSZrtkG7RK8Dqyuz3UElWB9E3n4j/KZ0UchaFYrqFIGSVFplWtQAA8z6sgPUvB1s9KolQIfN/xwzXqRQfttaZIgZ8XxvNMAJ7Q0oqi/pRO8A8YaxKy/iOIF2o4oodja0dYIAhTEuEJdkiQMBKbNSUxtahbpkaRGvVFrT4xTgpf/38Z8ulKTKjJP2nqkXQdWv7s80OJkfuT+eE2wVGcuAQpwudR/lHaaXeWtX1D71pbUipLFiTSN8saqtV/qPl4iaUd0J5mEm8QubTvDLjITz91KH2Sd4g/WDfXeMyYhe7uFX9/vas1/fz7wnn4DnrhRHfahZ+49f5n/O+THMXZaiv1P4YCtXMd4mTrsXXXHdrq2ThdiukHzIuX2+SHdzxbliHI6YTsfC6XZ8j1fnEffi2RYodSw4Y7uch/XW0NQj63Ruu+M1k3eXpjxMXve/XEn1vfo3zssbM3xzVdTfQKP368+eHWsK3J/1bo9q4W9/HPOdLG+sPAanq8+NuOYSY55I7UstS4h9InFbiI33133EUNfu7m36ePrt8EhHx8jwOYy67O4pBeXXn9oDSiIux48Mm4dHUHh3t2uoA9/NB7NSKvR5ej+PJGtNxD97gVEADfl/IDCcFFR0nHX7+rZ6JHz1n7oCvteyfHk7L6135Qn+Urui+aJwmWHJRVarTQayLunpTEAh92nE8Pd71987BMTO0MolEJIWI5C1mkYUzDJUOqxArdUGtFvSuLrDAMpblDYsWgUQel1D0m0Lsl5vEAXzFirDvkGtNwy0OxwDW3aYjRS0gyKOIRHyk1AWiAVbNhYU1LYjyW7iaFLmk7oRtckxqFVpsrlGZEF0jBm2MUnHGIaYEjNsAKchk4lAKyUGJDCVnjFriVqNy75JJRAzCLIDhXAYRATxJkEyAWGB3dZMUO732yESOxMOramr8HZDKBu5c0hLRdMC0ai2tKq7lldsxkh0GAaDMIowgxqAEzGZaQKylg8yQASMir5H0qqEGjXDbdWq+bXmByhiDRjb5UiRo6jP2jkLLwfcspMpfeSSAQAA') format('woff2'),
+    url('iconfont.woff?t=1565812004222') format('woff'),
+    url('iconfont.ttf?t=1565812004222') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('iconfont.svg?t=1565812004222#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont1 {
+    font-family: "iconfont1" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-guanbi:before {
+    content: "\e60e";
+}
+
+.icon-tuozhuai:before {
+    content: "\e636";
+}
+
+.icon-guanbi, .icon-tuozhuai{
+    font-size: 36px;
+    color: #5b6c7d;
+}
+
+.icon-tuozhuai{
+    position: absolute;
+    left: 240px;
+    top: 80px;
+}
+
+/*.icon-guanbi{*/
+/*    position: relative;*/
+/*    left: 250px;*/
+/*}*/
