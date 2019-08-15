@@ -18,3 +18,4 @@ electron
 electron-package
 
 有关于看板娘设置的内容请看 https://github.com/fghrsh/live2d_demo 。
+
